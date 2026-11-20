@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#203d37"><title>Вход · ИТ Платформа</title>
+  <link rel="icon" href="/mark.png"><link rel="stylesheet" href="/style.css"><script defer src="/auth.js"></script>
+</head>
+<body class="access-page">
+  <main class="access-card">
+    <div class="access-cover">
+      <div class="access-logo"><img src="/mark.png" alt=""><span>ИТ Платформа<small>КОЛЛЕДЖ</small></span></div>
+      <img class="access-campus" src="/campus.png" alt="">
+    </div>
+    <section class="access-form">
+      <h1 id="access-title">Вход в кабинет</h1>
+      <form id="access" method="post">
+        <label class="field" id="name-field" hidden><span>Имя и фамилия</span><input name="name" autocomplete="name" maxlength="120" disabled></label>
+        <label class="field"><span>Электронная почта</span><input name="email" type="email" autocomplete="username" maxlength="160" required></label>
+        <label class="field"><span>Пароль</span><input name="password" type="password" autocomplete="current-password" maxlength="128" required></label>
+        <label class="field" id="confirm-field" hidden><span>Повторите пароль</span><input name="confirmation" type="password" autocomplete="new-password" maxlength="128" disabled></label>
+        <p role="alert" id="access-error"></p>
+        <button class="button primary" id="access-submit">Войти</button>
+      </form>
+      <a id="access-mode" href="#register">Создать аккаунт</a>
+    </section>
+  </main>
+</body>
+</html>
